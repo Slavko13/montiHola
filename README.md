@@ -1,31 +1,8 @@
 # montiHola
-!!!Важно!!!
-Скрипт для создание базы данных
 
-CREATE TABLE public.statistic
-(
-    id integer NOT NULL,
-    game_count integer NOT NULL,
-    loses integer NOT NULL,
-    win_rate double precision NOT NULL,
-    wins integer NOT NULL
-)
-WITH (
-    OIDS = FALSE
-)
-TABLESPACE pg_default;
-
-ALTER TABLE public.statistic
-    OWNER to postgres;
-    
-INSERT INTO public.statistic(
-	id, game_count, loses, win_rate, wins)
-	VALUES (1, 0, 0, 0, 0);
-  
-!!!Важно!!!
 
 Попробуй обыграть меня
-<h1> Игра в парадокс Монти Хола <h1>
+<h1> Игра в парадокс Монти Хола </h1>
 
 Представьте, что вы стали участником игры, в которой вам нужно выбрать одну из трёх дверей. За одной из дверей находится автомобиль, за двумя другими дверями — козы. 
 Вы выбираете одну из дверей, например, номер 1, после этого ведущий, который знает, где находится автомобиль, а где — козы, открывает одну из оставшихся дверей, например, номер 3, за которой находится коза. 
@@ -53,5 +30,30 @@ INSERT INTO public.statistic(
 
 <h3>Использование</h3>
 
-На вашем сервере базы данных, создать новую БД по скрипту выше Далее перейти на localhost:8080/game, если не произойдет авторедирект вдруг.
+На вашем сервере базы данных, создать новую БД по скрипту ниже Далее перейти на localhost:8080/game, если не произойдет авторедирект вдруг.
 На странице /game уже можно будет играть в игру(все описания и подсказки + статистика находятся на этой странице)
+
+<h3> !!!Важно!!! </h3>
+<h2>Скрипт для создание базы данных</h2>
+
+CREATE TABLE public.statistic
+(
+    id integer NOT NULL,
+    game_count integer NOT NULL,
+    loses integer NOT NULL,
+    win_rate double precision NOT NULL,
+    wins integer NOT NULL
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.statistic
+    OWNER to postgres;
+    
+INSERT INTO public.statistic(
+	id, game_count, loses, win_rate, wins)
+	VALUES (1, 0, 0, 0, 0);
+  
+<h3> !!!Важно!!! </h3>
