@@ -10,26 +10,12 @@ public class Statistic {
 
     @Id
     private int id;
-    private int gameCount;
-    private int loses;
-    private int wins;
-    private double winRate;
-
-    public double getWinRate() {
-        return winRate;
-    }
-
-    public void setWinRate(double winRate) {
-        this.winRate = winRate;
-    }
-
-    public int getGameCount() {
-        return gameCount;
-    }
-
-    public void setGameCount(int gameCount) {
-        this.gameCount = gameCount;
-    }
+    private int gameCountAfterChange;
+    private int gameCountWithOutChange;
+    private int losesAfterChange;
+    private int winsAfterChange;
+    private int losesWithOutChange;
+    private int winsWithOutChange;
 
     public int getId() {
         return id;
@@ -39,19 +25,51 @@ public class Statistic {
         this.id = id;
     }
 
-    public int getLoses() {
-        return loses;
+    public int getGameCountAfterChange() {
+        return gameCountAfterChange;
     }
 
-    public void setLoses(int loses) {
-        this.loses = loses;
+    public void setGameCountAfterChange(int gameCountAfterChange) {
+        this.gameCountAfterChange = gameCountAfterChange;
     }
 
-    public int getWins() {
-        return wins;
+    public int getGameCountWithOutChange() {
+        return gameCountWithOutChange;
     }
 
-    public void setWins(int wins) {
-        this.wins = wins;
+    public void setGameCountWithOutChange(int gameCountWithOutChange) {
+        this.gameCountWithOutChange = gameCountWithOutChange;
+    }
+
+    public int getLosesAfterChange() {
+        return losesAfterChange;
+    }
+
+    public void setLosesAfterChange(int losesAfterChange) {
+        this.losesAfterChange = losesAfterChange;
+    }
+
+    public int getWinsAfterChange() {
+        return winsAfterChange;
+    }
+
+    public void setWinsAfterChange(int winsAfterChange) {
+        this.winsAfterChange = winsAfterChange;
+    }
+
+    public int getLosesWithOutChange() {
+        return losesWithOutChange;
+    }
+
+    public void setLosesWithOutChange(int losesWithOutChange) {
+        this.losesWithOutChange = losesWithOutChange;
+    }
+
+    public int getWinsWithOutChange() {
+        return winsWithOutChange;
+    }
+
+    public void setWinsWithOutChange(int winsWithOutChange) {
+        this.winsWithOutChange = winsWithOutChange;
     }
 }

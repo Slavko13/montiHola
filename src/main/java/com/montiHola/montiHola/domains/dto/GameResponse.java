@@ -2,7 +2,7 @@ package com.montiHola.montiHola.domains.dto;
 
 public class GameResponse {
     private int correctDoor;
-    private int finalDoor;
+    private int userChoice;
 
 
     public int getCorrectDoor() {
@@ -13,11 +13,11 @@ public class GameResponse {
         this.correctDoor = correctDoor;
     }
 
-    public int getFinalDoor() {
-        return finalDoor;
+    public int getUserChoice() {
+        return userChoice;
     }
 
-    public void setFinalDoor(int finalDoor) {
-        this.finalDoor = finalDoor;
+    public void setUserChoice(int userChoice) {
+        this.userChoice = userChoice;
     }
 }
